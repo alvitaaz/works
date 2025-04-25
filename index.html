@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <!-- googlefonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a0a;
+            color: #fff;
+            overflow-x: hidden;
+            margin: 0;
+        }
+    
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(10, 10, 10, 0.9);
+            padding: 10px 0;
+            text-align: center;
+        }
+    
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+    
+        nav a {
+            color: #00d9ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #121212;
+            padding: 0 20px;
+            text-align: center;
+        }
+    
+        header {
+            text-align: center;
+            padding: 100px 290px;
+            background: #121212;
+        }
+
+.bold-name {
+    color: #00bcd4; 
+    font-size: 40px; 
+    font-weight: 600; 
+    background: none; 
+    text-shadow: 0 0 5px rgba(0, 188, 212, 0.5), 0 0 10px rgba(0, 188, 212, 0.3); 
+}
+
+.profile-text h1 {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.profile-text .main-text {
+    font-size: 18px;
+    color: #fff;
+}
+
+    
+        .profile-pic {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border: 5px solid #00d9ff;
+            box-shadow: 0 0 20px #00d9ff;
+            margin-left: 50px;
+        }
+    
+        .profile-pic {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid #00d9ff;
+            box-shadow: 0 0 20px #00d9ff;
+        }
+    
+        .profile-text {
+            text-align: left;
+            margin-right: 10px;
+        }
+    
+        .btn-primary {
+            background-color: #00d9ff;
+            color: #0a0a0a;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 30px;
+        }
+    
+        .btn-primary {
+            background-color: #00d9ff;
+            color: #0a0a0a;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    
+        section {
+            height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+    
+        .card {
+            background: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
+        }
+    
+        footer {
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .info-contact {
+            display: flex;
+            gap: 30px;
+            justify-content: flex-start;
+            margin-top: 30px;
+            margin-right: auto;
+        }
+    
+        .info-contact a {
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 3px solid #00d9ff;
+            background-color: #121212;
+            transition: all 0.3s ease;
+        }
+    
+        .info-contact a:hover {
+            background-color: #00d9ff;
+            color: #0a0a0a;
+        }
+    
+        .typing-effect {
+            font-size: 24px;
+            font-weight: 600;
+            display: inline-block;
+            position: relative;
+            color: #00d9ff;
+        }
+    
+        .typing-effect::after {
+            content: "|";
+            color: #00d9ff;
+            position: absolute;
+            animation: blink-caret 0.7s step-end infinite;
+            left: 100%;
+            top: 0;
+        }
+    
+        @keyframes blink-caret {
+            0%,
+            50%,
+            100% {
+                opacity: 1;
+            }
+    
+            25%,
+            75% {
+                opacity: 0;
+            }
+        }
+    
+        .profile-text p {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+    
+        .profile-text .main-text {
+            margin-bottom: 20px;
+        }
+    
+        .profile-text h1 {
+            font-weight: 200;
+            font-size: 30px;
+        }
+    
+        .profile-text .bold-name {
+            font-weight: 600;
+            font-size: 40px;
+        }
+    
+        .typing-effect span.white-text {
+            color: #fff;
+        }
+
+#MyProjects {
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+}
+
+h2 {
+    font-size: 3rem; 
+    color: transparent; 
+    text-align: center;
+    margin-bottom: 50px; 
+    background: linear-gradient(to right, #808080, #00d9ff); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    font-weight: bold; 
+}
+
+#MyProjects {
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+}
+
+.MyProjects-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    justify-content: center;
+    grid-template-rows: auto auto; 
+    padding: 0 20px;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; 
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.5); 
+    width: 100%; 
+    max-width: 320px; 
+    margin: 0 auto; 
+    background-color: #fff; 
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
+}
+
+.project-card:nth-child(1) img,
+.project-card:nth-child(3) img {
+    height: 180px; 
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 217, 255, 0.5), rgba(0, 217, 255, 0.9));
+    padding: 15px; 
+    transform: translateY(100%); 
+    transition: transform 0.3s ease;
+    color: #fff;
+    border-top: 2px solid #00d9ff;
+    font-size: 14px; 
+}
+
+.project-card:hover .card-body {
+    transform: translateY(0); 
+}
+
+.project-card:hover img {
+    opacity: 0.3; 
+}
+
+.project-card a {
+    margin-top: 10px; 
+    display: inline-block;
+    padding: 8px 20px; 
+    background-color: #00d9ff;
+    color: #0a0a0a;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+}
+
+.project-card a:hover {
+    background-color: #008c8c;
+}
+
+.project-card .btn-secondary {
+    background-color: #808080;
+}
+
+@media (max-width: 768px) {
+    .MyProjects-section {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    
+    .project-card {
+        max-width: 100%; 
+    }
+
+    .project-card img {
+        height: 160px; 
+    }
+}
+
+.internship-experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;  
+    justify-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.internship h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.internship h2 span.my {
+    color: #fff;
+    font-weight: bold;
+}
+
+.internship h2 span.skill {
+    color: #00d9ff;
+    font-weight: bold;
+}
+
+.internship-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    justify-items: center;  
+    justify-content: flex-end; 
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; 
+    margin: 0 20px; 
+}
+
+.internship-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0, 217, 255, 0.5);
+}
+
+.internship-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.internship-card h3 {
+    color: #00d9ff;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.internship-card p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.internship h2 {
+    text-align: center;
+    margin-bottom: 200px; 
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.internship h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #00d9ff;
+    margin: 12px auto 0; 
+    border-radius: 5px;
+}
+
+#experience {
+  scroll-margin-top: 100px; 
+}
+.internship-experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+        .about,
+        .contact {
+            padding: 60px 20px;
+            background: #1a1a1a;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+    
+        .about h2,
+        .skills h2,
+        .contact h2 {
+            color: #00d9ff;
+            margin-bottom: 20px;
+        }
+    
+        .contact .form-control {
+            border-radius: 25px;
+            margin-bottom: 10px;
+        }
+    
+        .contact .btn-primary {
+            margin-top: 10px;
+        }
+    
+        @media (max-width: 768px) {
+            .profile-pic {
+                width: 250px;
+                height: 250px;
+            }
+    
+            .profile-text {
+                text-align: center;
+                margin-right: 0;
+            }
+    
+            .info-contact {
+                justify-content: center;
+            }
+    
+            .MyProjects-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    
+        @media (max-width: 576px) {
+            .MyProjects-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    .chatbot-container {
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    height: 530px;
+    border: 2px solid #00d9ff;
+    font-size: 14px;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.chatbot-header {
+    background: #00d9ff;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0a0a0a;
+    z-index: 2;
+}
+
+.chatbot-header .left-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chatbot-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0a0a0a;
+    box-shadow: 0 0 5px rgba(10, 10, 10, 0.5);
+}
+
+.chatbot-header .text-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.chatbot-header .title {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0;
+    color: #0a0a0a;
+}
+
+.chatbot-header .subtitle {
+    font-size: 12px;
+    color: #222;
+    margin: 0;
+}
+
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+.chatbot-message {
+    margin: 10px 0;
+    padding: 12px 16px;
+    border-radius: 12px;
+    max-width: 85%;
+    line-height: 1.5;
+    word-break: break-word;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.2);
+}
+
+.chatbot-message.bot {
+    background-color: #333;
+    color: white;
+    align-self: flex-start;
+}
+
+.chatbot-message.user {
+    background-color: #00d9ff;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.chatbot-options {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+    gap: 8px;
+}
+
+.chatbot-options button {
+    border: 1px solid #00d9ff;
+    background: transparent;
+    color: #00d9ff;
+    padding: 10px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.chatbot-options button:hover {
+    background: #00d9ff;
+    color: #0a0a0a;
+}
+
+.chatbot-options.left {
+    align-self: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.chatbot-send {
+    background: #00d9ff;
+    color: #0a0a0a;
+    border: none;
+    padding: 10px 16px;
+    margin: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #00d9ff, #00a2ff);
+    color: #0a0a0a;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.7), 0 0 30px rgba(0, 217, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.chatbot-toggle:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.9), 0 0 40px rgba(0, 217, 255, 0.5);
+    background: linear-gradient(135deg, #00f0ff, #00bfff);
+    color: #000;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #0a0a0a;
+    cursor: pointer;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #00d9ff;
+    border-radius: 10px;
+}
+  
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#experience"><i class="fas fa-laptop-code"></i>Experience </a></li>
+            <li><a href="#MyProjects"><i class="fas fa-briefcase"></i> Projects</a></li>
+        </ul>
+    </nav>
+<!-- home section -->
+<section id="home">
+  <header>
+      <div class="profile-text">
+          <h1>Hello, It's Me</h1>
+          <h1 class="bold-name">ALVITA AZALIA</h1>
+          <p class="main-text">
+              <span class="typing-effect">
+                  <span class="white-text">and I'm a </span>
+                  <span id="typing-effect"></span>
+              </span>
+          </p>
+          <p>I am an IT student at President University, specializing in cybersecurity, with a strong passion for programming and web development.</p>
+          
+          <div class="info-contact">
+              <a href="mailto:alvitaazalia3@gmail.com">
+                  <i class="fas fa-envelope"></i>
+              </a>
+              <a href="tel:+6285283123998">
+                  <i class="fas fa-phone"></i>
+              </a>
+              <a href="https://github.com/alvitaaz" target="_blank">
+                  <i class="fab fa-github"></i>
+              </a>
+          </div>
+          <a href="#" class="btn-primary" id="downloadCvBtn" onclick="downloadCV()">
+              Download CV
+          </a>
+      </div>
+      <img src="profil.jpg" alt="Foto Profil" class="profile-pic">
+  </header>
+</section>
+
+<script>
+function downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'https://docs.google.com/presentation/d/1hez2tzjNLJR5cS9RcIuX1Faba5FvLbYoULdkdGqYAb8/export/pdf';
+    link.download = 'Alvita_Azalia_CV.pdf'; 
+
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link); 
+}
+</script>
+
+<style>
+.btn-primary {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #006d80; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px; 
+    font-size: 18px;
+    border: 2px solid #006d80; 
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 109, 128, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: #004f5c;
+    border: 2px solid #004f5c;
+    box-shadow: 0 6px 15px rgba(0, 79, 92, 0.5);
+    transform: translateY(-3px);
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 79, 92, 0.4);
+}
+</style>
+
+
+<!-- about section -->
+<section id="about">
+    <div class="container">
+      <h2 class="about-title">About Me</h2>
+  
+      <div class="about-content-wrapper">
+        <!-- photo -->
+        <div class="photo-frame">
+          <div class="photo-card-behind"></div>
+          <img src="profil.jpg" alt="Foto Alvita" class="profile-photo arch">
+        </div>
+  
+        <!-- text content -->
+        <div class="about-text">
+          <div class="text-background-decor"></div>
+          <p>
+            I’m Alvita Azalia, an IT student at President University with a focus in cybersecurity.
+            During my studies, I have completed two internship programs, one in import procurement and the other in
+            system development. These experiences have broadened my perspective, not only in building digital systems and
+            applications but also in understanding business processes and company operations as a whole.
+          </p>
+          <p>
+            One of the projects I developed was an AI-based monitoring system using a Flask API,
+            designed to detect the presence of personnel and ensure the use of Personal Protective Equipment (PPE)
+            in real-time via CCTV. I’m also familiar with system testing, debugging, and working with technical documentation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    #about {
+      background-color: #0a0a0a;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+  
+    .about-title {
+      font-size: 42px;
+      color: #00d9ff;
+      margin-bottom: 60px;
+      font-weight: 600;
+      text-shadow: 0 0 10px #00d9ff;
+    }
+  
+    .about-content-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      text-align: left;
+      position: relative;
+    }
+  
+    .photo-frame {
+      position: relative;
+      width: 280px;
+      height: 360px;
+      animation: float 3s ease-in-out infinite;
+    }
+  
+    .photo-card-behind {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 140px 140px 0 0;
+      background-color: #1a1a1a;
+      box-shadow: 0 0 25px rgba(0, 217, 255, 0.6);
+      top: 15px;
+      left: 15px;
+      z-index: 1;
+    }
+  
+    .profile-photo.arch {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 5px solid #00d9ff;
+      box-shadow: 0 0 15px #00d9ff;
+      border-radius: 140px 140px 0 0;
+      position: relative;
+      z-index: 2;
+    }
+  
+    .about-text {
+      max-width: 600px;
+      position: relative;
+      padding: 30px 40px;
+      z-index: 1;
+      margin-left: 30px; 
+    }
+  
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #ffffff;
+      position: relative;
+      z-index: 2;
+    }
+  
+    .text-background-decor {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 30% 20%, rgba(0,217,255,0.08), transparent 60%);
+      filter: blur(10px);
+      z-index: 0;
+      border-radius: 15px;
+    }
+  
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+  
+
+<!-- internship experience section -->
+<div class="internship" id="experience">
+    <h2><span class="my">Internship</span> <span class="skill">Experience</span></h2>
+  
+    <div class="internship-experience">
+      <!-- card 1 -->
+      <a href="procurement-details.html" class="internship-card">
+        <img src="import.jpg" alt="Procurement Intern">
+        <h3>Procurement and Import Intern</h3>
+        <p>Managed import documents, such as invoices and shipping documents, as part of the procurement process.</p>
+      </a>
+  
+      <!-- card 2: web developer intern -->
+      <a href="web-dev-intern-details.html" class="internship-card">
+        <div class="internship-card-header"></div>
+        <div class="internship-card-body">
+          <img src="web.jpg" alt="Web Developer Intern" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 15px;">
+          <h3>Web Developer Intern</h3>
+          <p>Collaborated with the development team to create and maintain internal web applications, improved features, and contributed to troubleshooting and debugging.</p>
+        </div>
+      </a>
+    </div>
+  </div>    
+  
+  <style>
+    .internship-experience {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 70px; 
+      padding: 20px;
+      justify-items: center; 
+      margin-top: 90px; 
+      max-width: 1000px;
+      margin: 0 auto; 
+      padding-left: 60px; 
+      padding-right: 60px; 
+    }
+  
+    .internship h2 {
+      text-align: center;
+      margin-bottom: 90px; 
+      font-size: 36px;
+      font-weight: bold;
+    }
+  
+    .internship h2 span.my {
+      color: #fff;
+      font-weight: bold;
+    }
+  
+    .internship h2 span.skill {
+      color: #00d9ff;
+      font-weight: bold;
+    }
+  
+    .internship h2::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 3px;
+      background: #00d9ff;
+      margin: 12px auto 0;
+      border-radius: 5px;
+    }
+  
+    .internship-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      justify-items: center; 
+      box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-sizing: border-box;
+      margin: 0;
+      width: 100%;
+      max-width: 300px;
+      display: flex; 
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .internship-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0, 217, 255, 0.5);
+    }
+  
+    .internship-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+  
+    .internship-card h3 {
+      color: #00d9ff;
+      font-size: 18px;
+      margin-bottom: 13px;
+    }
+  
+    .internship-card p {
+      color: #ccc;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  
+    #experience {
+      scroll-margin-top: 100px;
+    }
+  </style>
+  
+
+<!-- projects section -->
+<section id="MyProjects" style="padding-top: 45px;">
+  <div class="container text-center">
+      <h2>My Projects</h2>
+      <div class="MyProjects-section">
+          <!-- proyek 1 -->
+          <div class="project-card">
+              <div class="card p-3">
+                  <img src="react.png" class="card-img-top" alt="Proyek 2">
+                  <div class="card-body">
+                      <h5 class="card-title">React Weather App</h5>
+                      <p class="card-text">Weather is a web app built with React that displays real-time weather data (temperature, humidity, wind speed) for cities using the OpenWeatherMap API.</p>
+                      <a href="https://github.com/alvitaaz/ReactWeatherApp" target="_blank" class="btn btn-primary">GitHub</a>
+                      <a href="https://react-weather-app-tau-lilac.vercel.app/" class="btn btn-secondary" target="_blank">Demo</a>
+                  </div>
+              </div>
+          </div>
+
+<!-- proyek 2 -->
+<div class="project-card">
+  <div class="card p-3">
+      <img src="thumbail2.png" class="card-img-top" alt="Proyek 3">
+      <div class="card-body">
+          <h5 class="card-title">Task Tracker</h5>
+          <p class="card-text">Task Tracker is a Laravel app for managing tasks with CRUD operations, search functionality, and MySQL storage.</p>
+          <a href="https://github.com/alvitaaz/laravel-task-tracker" target="_blank" class="btn btn-primary">GitHub</a>
+          <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#videoModal2">Demo</a>
+      </div>
+  </div>
+</div>
+
+<!-- modal untuk Video -->
+<div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="videoModalLabel">Demo - Task Tracker</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/6imC7nOr0lw" title="YouTube video" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Proyek 3 -->
+<div class="project-card">
+  <div class="card p-3">
+      <img src="thumbail3.png" class="card-img-top" alt="Data Analysis">
+      <div class="card-body">
+          <h5 class="card-title">AES-256 Encryption & Decryption</h5>
+          <p class="card-text">AES-256 Encryption & Decryption app with HMAC for key management and activity logging.</p>
+          <a href="https://github.com/alvitaaz/aes-256-encryption-decryption" target="_blank" class="btn btn-primary">GitHub</a>
+          <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#videoModal3">Demo</a>
+      </div>
+  </div>
+</div>
+
+<!-- modal untuk Video -->
+<div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="videoModalLabel">Demo - AES-256 Encryption & Decryption</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <!-- video yotube didlm iframe -->
+              <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/4kvK7p0IpFA" title="YouTube video" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Proyek 4 -->
+<div class="project-card">
+  <div class="card p-3">
+      <img src="thumbail4.png" class="card-img-top" alt="Proyek 5">
+      <div class="card-body">
+          <h5 class="card-title">Kedaiku-BookStore</h5>
+          <p class="card-text">Online Bookstore is a web app for users to register, browse, and purchase books, with login for users and admin.</p>
+          <a href="https://github.com/alvitaaz/BookStoreHub" target="_blank" class="btn btn-primary">GitHub</a>
+          <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#videoModal4">Demo</a>
+      </div>
+  </div>
+</div>
+
+<!-- Modal untuk Video -->
+<div class="modal fade" id="videoModal4" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="videoModalLabel">Demo - Kedaiku-BookStore</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/calujYcxWkM" title="YouTube video" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+          
+
+      </div>
+  </div>
+</section>
+
+    <!-- JavaScript for Typing Effect -->
+    <script>
+        const words = ["Programmer", "Web Developer", "Tech Enthusiast"];
+        let i = 0;
+        let j = 0;
+        let currentWord = "";
+        let isDeleting = false;
+        let element = document.getElementById("typing-effect");
+
+        function type() {
+            if (isDeleting) {
+                currentWord = currentWord.substring(0, currentWord.length - 1);
+            } else {
+                currentWord = words[i].substring(0, j + 1);
+            }
+
+            element.textContent = currentWord;
+
+            if (!isDeleting && j < words[i].length) {
+                j++;
+            } else if (isDeleting && j > 0) {
+                j--;
+            }
+
+            if (!isDeleting && j === words[i].length) {
+                isDeleting = true;
+                setTimeout(type, 1000);
+            } else if (isDeleting && j === 0) {
+                isDeleting = false;
+                i = (i + 1) % words.length;
+                setTimeout(type, 500);
+            } else {
+                setTimeout(type, 200);
+            }
+        }
+
+        type(); 
+    </script>
+
+<!-- chatbot Button -->
+<button class="chatbot-toggle">Contact</button>
+
+<!-- chatbot UI -->
+<div class="chatbot-container" id="chatbot" style="display: none;">
+  <div class="chatbot-header">
+    <div class="left-info">
+      <img src="profil.jpg" alt="Foto Profil">
+      <div class="text-info">
+        <div class="title">Alvita Bot</div>
+        <div class="subtitle">Ask me a question</div>
+      </div>
+    </div>
+    <button class="close-btn" onclick="closeChatbot()">&times;</button>
+  </div>
+
+  <div class="chatbot-messages" id="chatbot-messages">
+  </div>
+</div>
+
+<script>
+  let chatHistory = []; 
+
+  document.querySelector(".chatbot-toggle").addEventListener("click", function () {
+    const chatbot = document.getElementById("chatbot");
+    const messages = document.getElementById("chatbot-messages");
+
+    if (chatbot.style.display === "block") {
+      chatbot.style.display = "none";
+    } else {
+      chatbot.style.display = "flex"; 
+      if (chatHistory.length === 0) {
+        showInitialBotMessages(); 
+      } else {
+        restoreChatHistory(); 
+      }
+      scrollToBottom();
+    }
+  });
+
+  function showInitialBotMessages() {
+    const messages = document.getElementById("chatbot-messages");
+    messages.innerHTML = `
+      <p class='chatbot-message bot' data-initial="true">Hi!</p>
+      <p class='chatbot-message bot' data-initial="true">I'm Alvita Bot. I'm here to help you with any questions you might have about Alvita's work.</p>
+      <p class='chatbot-message bot' data-initial="true">How can I help you today?</p>
+    `;
+    showOptions(); 
+    scrollToBottom();
+  }
+
+  function restoreChatHistory() {
+    const messages = document.getElementById("chatbot-messages");
+    messages.innerHTML = ""; 
+
+    chatHistory.forEach(msg => {
+      messages.innerHTML += `<p class='chatbot-message ${msg.type}'>${msg.text}</p>`;
+    });
+
+    showOptions();
+    scrollToBottom();
+  }
+
+  function reply(option) {
+    const messages = document.getElementById("chatbot-messages");
+    const options = document.getElementById("chatbot-options");
+
+    if (options) options.remove();
+
+    messages.innerHTML += `<p class='chatbot-message user'>${option}</p>`;
+    scrollToBottom();
+
+    chatHistory.push({ type: 'user', text: option });
+
+    if (option === "Just saying hello!") {
+      setTimeout(() => addBotMessage("Hello!"), 500);
+      setTimeout(() => addBotMessage("Thanks for saying hi 😁"), 1000);
+      setTimeout(() => addBotMessage("I hope you've enjoyed browsing my work."), 1500);
+      setTimeout(() => showOptions(), 2000);
+    } else if (option === "We'd like to hire you") {
+      setTimeout(() => addBotMessage("Ok, great!"), 500);
+      setTimeout(() => addBotMessage("Exciting times 🕺"), 1000);
+      setTimeout(() => {
+        addBotMessage("Send me a message and let's chat further!");
+        addButtons([  
+          { text: "Send a message", action: sendEmail, style: "chatbot-send" },
+          { text: "Other options", action: otherOptions }
+        ]);
+      }, 1500);
+    } else if (option === "Looking for your old portfolio") {
+      setTimeout(() => addBotMessage("Would you like to see my old portfolio? Sure!"), 500);
+      setTimeout(() => addBotMessage("My old portfolio still includes previous projects, while my new portfolio has been updated with internship experience and a more interactive design 😎"), 1000);
+      setTimeout(() => addBotMessage("Click the button below to view my old portfolio!"), 1500);
+      setTimeout(() => {
+        addButtons([
+          { text: "Get the Portfolio", action: openOldPortfolio, style: "chatbot-send" }
+        ]);
+      }, 2000);
+    } else {
+      setTimeout(() => {
+        addBotMessage(`Thanks for your message: "${option}"`);
+        showOptions();
+      }, 500);
+    }
+  }
+
+  function addBotMessage(text) {
+    const messages = document.getElementById("chatbot-messages");
+    messages.innerHTML += `<p class='chatbot-message bot'>${text}</p>`;
+    chatHistory.push({ type: 'bot', text: text }); 
+    scrollToBottom();
+  }
+
+  function addButtons(buttons) {
+    const messages = document.getElementById("chatbot-messages");
+    let html = `<div class="chatbot-options left" id="chatbot-options">`;
+    buttons.forEach(btn => {
+      html += `<button onclick="${btn.action.name}()" class="${btn.style || ''}">${btn.text}</button>`;
+    });
+    html += `</div>`;
+    messages.innerHTML += html;
+    scrollToBottom();
+  }
+
+  function showOptions() {
+    const messages = document.getElementById("chatbot-messages");
+    messages.innerHTML += `
+      <div class="chatbot-options left" id="chatbot-options">
+        <button onclick="reply('Looking for your old portfolio')">Looking for your old portfolio</button>
+        <button onclick="reply('Just saying hello!')">Just saying hello!</button>
+        <button onclick="reply('We\\'d like to hire you')">We'd like to hire you</button>
+      </div>`;
+    scrollToBottom();
+  }
+
+  function openOldPortfolio() {
+    window.open("https://alvitaaz.github.io/Portofolio/", "_blank");
+  }
+
+  function scrollToBottom() {
+    const messages = document.getElementById("chatbot-messages");
+    setTimeout(() => {
+      messages.scrollTop = messages.scrollHeight;
+    }, 50);
+  }
+
+  function closeChatbot() {
+    document.getElementById('chatbot').style.display = 'none';
+  }
+
+  function otherOptions() {
+    const messages = document.getElementById("chatbot-messages");
+
+    messages.innerHTML += `<p class='chatbot-message user'>Other options</p>`;
+    addBotMessage("Ok, here you go");
+    showOptions(); 
+  }
+  function sendEmail() {
+    window.location.href = "mailto:alvitaazalia3@gmail.com?subject=Internship Inquiry&body=Hello, I am interested in hiring you.";
+  }
+</script>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Alvita Azalia | built by me.</p>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
