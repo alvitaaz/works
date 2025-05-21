@@ -3,233 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <title>Web Developer Intern</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI', sans-serif;
-        background: linear-gradient(135deg, #0d0d0d, #1f1f1f); 
-        color: #d0d0d0;
-        background-attachment: fixed;
-      }
-  
-      .container {
-        max-width: 900px;
-        margin: 60px auto;
-        padding: 0 20px;
-      }
-  
-      h1, h2 {
-        color: #00d9ff;
-        text-align: center;
-      }
-  
-      h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-  
-      h2 {
-        font-size: 28px;
-        margin-top: 60px;
-        margin-bottom: 20px;
-      }
-  
-      .bagmaking-title {
-        font-size: 24px;
-        color: #00d9ff;
-        margin-bottom: 10px;
-        text-align: left;
-      }
-  
-      p {
-        line-height: 1.7;
-        font-size: 16px;
-        text-align: justify;
-        margin-bottom: 30px;
-      }
-  
-      .section {
-        background-color: rgba(26, 26, 26, 0.9);
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 0 15px rgba(0, 217, 255, 0.1);
-        margin-top: 60px; 
-        margin-bottom: 40px;
-      }
-  
-      .gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 40px;
-      }
-  
-      .gallery img {
-        width: 100%;
-        max-width: 650px;
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
-        margin-bottom: 10px;
-      }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1f1f1f); 
+      color: #d0d0d0;
+      background-attachment: fixed;
+    }
 
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
 
-      .caption {
-        text-align: center;
-        font-size: 14px;
-        color: #aaa;
-        margin-bottom: 40px;
-      }
-  
-      .certificate img {
-        width: 100%;
-        max-width: 650px;
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
-        display: block;
-        margin: 0 auto 10px;
-      }
-  
-      .back-link {
-        text-align: center;
-        margin-top: 60px;
-      }
-  
-      .back-link a {
-        color: #00d9ff;
-        text-decoration: none;
-        font-weight: bold;
-      }
-  
-      .back-link a:hover {
-        color: #fff;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
+    h1, h2 {
+      color: #00d9ff;
+      text-align: center;
+    }
 
-<!-- overview -->
-<div class="section">
-  <h1>Web Developer Intern</h1>
-  <p>
-    During my internship at PT Supernova Flexible Packaging, I assisted the development team in building and improving internal web applications. One of my main responsibilities was developing a production reporting system that displays real-time data. I was also involved in creating a CCTV-based monitoring system that uses AI detection to ensure the proper use of personal protective equipment (PPE) in the production area.
-    <br><br>
-    Throughout this internship, I gained hands-on experience with technologies such as HTML, CSS, JavaScript, and several frameworks. I also used Python for the object detection component, implementing the YOLO model. This experience gave me valuable insights into creating real-world systems used in an industrial environment.</p>
-</div>
-  
-      <!-- key projects -->
-      <div class="section">
-        <h1>Key Projects</h1>
-  
-        <!-- bagmaking Project -->
-        <div class="bagmaking-title">Bagmaking Production Reporting System</div>
-        <p>
-          One of the key projects I worked on was developing a web-based production report feature using PHP. This feature enabled multiple divisions to efficiently track daily performance metrics, such as machine uptime, output, and rework, based on real-time machine activity data. I implemented dynamic data rendering using foreach loops and automated calculations for totals, which streamlined the monitoring process and significantly improved transparency and efficiency across departments.
-        </p>
-  
-        <div class="gallery">
-          <img src="bagmaking.png" alt="Bagmaking Production Reporting System">
-          <div class="caption">Bagmaking Production Reporting System - Dynamic Data Table</div>
-        </div>
-      </div>
-  
-      <!-- web-based administration system -->
-      <div class="section">
-        <h2>Enhancing the Web-based Administration System</h2>
-  
-        <p>
-          In this project, I contributed to enhancing the company’s web-based administration system, focusing on modifying and adding features in the Certificate of Analysis (COA) transaction module.
-        </p>
-        <p>
-          I developed trigger elements like Get All Data and Copy Data, which triggered interactive pop-up modals for smoother user interaction. I also modified the add and edit functionalities to simplify data input and management. These improvements were developed using PHP to optimize efficiency and enhance the overall user experience.
-        </p>
-  
-        <div class="gallery">
-          <img src="coa-module-full-view.png" alt="COA Module Full View with Print, Edit, and Copy Features">
-          <div class="caption">COA Module with Print, Edit, and Copy Data Options</div>
-        </div>
-  
-        <div class="gallery">
-          <img src="get-all-data-popup.png.jpg" alt="Get All Data Pop-up">
-          <div class="caption">Pop-up Modal for Get All Data</div>
-        </div>
-  
-        <div class="gallery">
-          <img src="add-popup.png.jpg" alt="Add Data Pop-up">
-          <div class="caption">Pop-up Modal for Adding Data</div>
-        </div>
-  
-        <div class="gallery">
-          <img src="edit-popup.png.jpg" alt="Edit Data Pop-up">
-          <div class="caption">Pop-up Modal for Editing Data</div>
-        </div>
-      </div>
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
 
- <!-- AI CCTV System for Safety Gear and person detection -->
-<div class="section">
-  <h2 class="AI CCTV-title">AI CCTV System for Safety Gear and Person Detection</h2>
-  <p>
-   This project involves creating an AI-powered CCTV system using YOLO (You Only Look Once) for real-time object detection. The system is designed to detect people and safety gear, such as safety vests and helmets. By utilizing a Flask API, the CCTV video is streamed via RTSP, and each frame is processed using the YOLO model. The detection results are displayed in real-time through an endpoint accessible via a browser.
-  </p>
-  <p>
-    Additionally, images of detected individuals are automatically saved to a gallery for future reference. Technologies like OpenCV are used for image processing, while Flask enables the development of a web service to manage video streams and detection results.
-    </p>
-  <div class="gallery">
-    <img src="safety.jpg" alt="Person with Safety Vest and Hard Hat Detected">
-    <div class="caption">Person detected with safety gear (Safety Vest and Hard Hat)</div>
-  </div>
+    h2 {
+      font-size: 28px;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
 
-  <div class="gallery">
-    <img src="nosavety.jpg" alt="Person without Safety Vest Detected">
-    <div class="caption">Person detected without safety vest </div>
-  </div>
+    .bagmaking-title {
+      font-size: 24px;
+      color: #00d9ff;
+      margin-bottom: 10px;
+      text-align: left;
+    }
 
-  <div class="gallery">
-    <img src="galeri.jpg" alt="Saved Image of Detected Person">
-    <div class="caption">Image automatically saved to gallery when a person is detected</div>
-  </div>
+    p {
+      line-height: 1.7;
+      font-size: 16px;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
 
-  <!-- potongan Kode dlm screenshot -->
-   
-<!-- deskripsi untuk gambar pertama -->
-<h3>Code for Video Streaming Endpoint</h3>
-<p>This code sets up an endpoint that streams live video from the CCTV camera in real-time, allowing users to view the footage directly through a web browser interface.</p>
-<div class="screenshot" style="text-align: center;">
-  <img src="video_feed.png" alt="Screenshot of video_feed endpoint code" style="width: 80%; max-width: 600px; height: auto;">
-  <div class="caption">Endpoint for video streaming using Flask and OpenCV</div>
-</div>
+    .section {
+      background-color: rgba(26, 26, 26, 0.9);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 217, 255, 0.1);
+      margin-top: 60px; 
+      margin-bottom: 40px;
+    }
 
-<!-- deskripsi for gambar ke2 -->
-<h3>Code for Generating Frames and Object Detection</h3>
-<p>This function captures frames from the video feed and applies the YOLO model for object detection, identifying people and safety gear like safety vests and hard hats in real-time.</p>
-<div class="screenshot" style="text-align: center;">
-  <img src="generated.png" alt="Screenshot of generate_frames function code" style="width: 80%; max-width: 600px; height: auto;">
-  <div class="caption">Function for generating frames and performing object detection</div>
-</div>
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
 
-<!-- deskripsi buat gambar ketiga -->
-<h3>Code for Image Saving on Detection</h3>
-<p>This part of the code automatically saves images whenever a person is detected wearing safety gear. The images are stored with a unique timestamp for easy reference in the future.</p>
-<div class="screenshot" style="text-align: center;">
-  <img src="image.png" alt="Screenshot of image saving code" style="width: 80%; max-width: 600px; height: auto;">
-  <div class="caption">Code for saving images when a person is detected</div>
-</div>
+    .gallery img {
+      width: 100%;
+      max-width: 650px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
+      margin-bottom: 10px;
+    }
 
-<!-- Deskrip -->
-<h3>Code for Detection Data Endpoint</h3>
-<p>This endpoint sends real-time detection data in JSON format, including the number of people detected and which safety gear they are wearing. This allows the system to share valuable insights with the users.</p>
-<div class="screenshot" style="text-align: center;">
-  <img src="detection.png" alt="Screenshot of detection_data endpoint code" style="width: 80%; max-width: 600px; height: auto;">
-  <div class="caption">Endpoint for sending detection data in JSON format</div>
-</div>
+    .caption {
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 40px;
+    }
 
-      <!-- Back to Portfolio -->
-      <div class="back-link">
-        <a href="index.html">← Back to Portfolio</a>
-      </div>
-  
+    .certificate img {
+      width: 100%;
+      max-width: 650px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .back-link a {
+      color: #00d9ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      color: #fff;
+    }
+
+    .certificate {
+      margin-top: 80px; 
+    }
+
+    .section:last-child {
+      margin-bottom: 80px; 
+    }
+
+    .screenshot img {
+      width: 80%;
+      max-width: 600px;
+      height: auto;
+    }
+
+    .screenshot {
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- overview -->
+    <div class="section">
+      <h1>Web Developer Intern</h1>
+      <p>
+        During my internship at PT Supernova Flexible Packaging, I assisted the development team in building and improving internal web applications. One of my main responsibilities was developing a production reporting system that displays real-time data. I was also involved in creating a CCTV-based monitoring system that uses AI detection to ensure the proper use of personal protective equipment (PPE) in the production area.
+        <br><br>
+        Throughout this internship, I gained hands-on experience with technologies such as HTML, CSS, JavaScript, and several frameworks. I also used Python for the object detection component, implementing the YOLO model. This experience gave me valuable insights into creating real-world systems used in an industrial environment.
+      </p>
     </div>
-  </body>
-  </html>
-  
+
+    <!-- key projects -->
+    <div class="section">
+      <h1>Key Projects</h1>
+
+      <!-- bagmaking Project -->
+      <div class="bagmaking-title">Bagmaking Production Reporting System</div>
+      <p>
+        One of the key projects I worked on was developing a web-based production report feature using PHP. This feature enabled multiple divisions to efficiently track daily performance metrics, such as machine uptime, output, and rework, based on real-time machine activity data. I implemented dynamic data rendering using foreach loops and automated calculations for totals, which streamlined the monitoring process and significantly improved transparency and efficiency across departments.
+      </p>
+
+      <div class="gallery">
+        <img src="bagmaking.png" alt="Bagmaking Production Reporting System">
+        <div class="caption">Bagmaking Production Reporting System - Dynamic Data Table</div>
+      </div>
+    </div>
+
+    <!-- web based administration system -->
+    <div class="section">
+      <h2>Enhancing the Web-based Administration System</h2>
+      <p>
+        In this project, I contributed to enhancing the company’s web-based administration system, focusing on modifying and adding features in the Certificate of Analysis (COA) transaction module.
+      </p>
+      <p>
+        I developed trigger elements like Get All Data and Copy Data, which triggered interactive pop-up modals for smoother user interaction. I also modified the add and edit functionalities to simplify data input and management. These improvements were developed using PHP to optimize efficiency and enhance the overall user experience.
+      </p>
+
+      <div class="gallery">
+        <img src="coa-module-full-view.png" alt="COA Module Full View with Print, Edit, and Copy Features">
+        <div class="caption">COA Module with Print, Edit, and Copy Data Options</div>
+      </div>
+
+      <div class="gallery">
+        <img src="get-all-data-popup.png.jpg" alt="Get All Data Pop-up">
+        <div class="caption">Pop-up Modal for Get All Data</div>
+      </div>
+
+      <div class="gallery">
+        <img src="add-popup.png.jpg" alt="Add Data Pop-up">
+        <div class="caption">Pop-up Modal for Adding Data</div>
+      </div>
+
+      <div class="gallery">
+        <img src="edit-popup.png.jpg" alt="Edit Data Pop-up">
+        <div class="caption">Pop-up Modal for Editing Data</div>
+      </div>
+    </div>
+
+    <!-- AI CCTV System for Safety Gear and person detection -->
+    <div class="section">
+      <h2 class="AI CCTV-title">AI CCTV System for Safety Gear and Person Detection</h2>
+      <p>
+        This project involves creating an AI-powered CCTV system using YOLO (You Only Look Once) for real-time object detection. The system is designed to detect people and safety gear, such as safety vests and helmets. By utilizing a Flask API, the CCTV video is streamed via RTSP, and each frame is processed using the YOLO model. The detection results are displayed in real-time through an endpoint accessible via a browser.
+      </p>
+      <p>
+        Additionally, images of detected individuals are automatically saved to a gallery for future reference. Technologies like OpenCV are used for image processing, while Flask enables the development of a web service to manage video streams and detection results.
+      </p>
+
+      <div class="gallery">
+        <img src="safety.jpg" alt="Person with Safety Vest and Hard Hat Detected">
+        <div class="caption">Person detected with safety gear (Safety Vest and Hard Hat)</div>
+      </div>
+
+      <div class="gallery">
+        <img src="nosavety.jpg" alt="Person without Safety Vest Detected">
+        <div class="caption">Person detected without safety vest </div>
+      </div>
+
+      <div class="gallery">
+        <img src="galeri.jpg" alt="Saved Image of Detected Person">
+        <div class="caption">Image automatically saved to gallery when a person is detected</div>
+      </div>
+
+      <!-- potongan Kode dlm screenshot -->
+      <h3>Code for Video Streaming Endpoint</h3>
+      <p>This code sets up an endpoint that streams live video from the CCTV camera in real-time, allowing users to view the footage directly through a web browser interface.</p>
+      <div class="screenshot">
+        <img src="video_feed.png" alt="Screenshot of video_feed endpoint code">
+        <div class="caption">Endpoint for video streaming using Flask and OpenCV</div>
+      </div>
+
+      <h3>Code for Generating Frames and Object Detection</h3>
+      <p>This function captures frames from the video feed and applies the YOLO model for object detection, identifying people and safety gear like safety vests and hard hats in real-time.</p>
+      <div class="screenshot">
+        <img src="generated.png" alt="Screenshot of generate_frames function code">
+        <div class="caption">Function for generating frames and performing object detection</div>
+      </div>
+
+      <h3>Code for Image Saving on Detection</h3>
+      <p>This part of the code automatically saves images whenever a person is detected wearing safety gear. The images are stored with a unique timestamp for easy reference in the future.</p>
+      <div class="screenshot">
+        <img src="image.png" alt="Screenshot of image saving code">
+        <div class="caption">Code for saving images when a person is detected</div>
+      </div>
+
+      <h3>Code for Detection Data Endpoint</h3>
+      <p>This endpoint sends real-time detection data in JSON format, including the number of people detected and which safety gear they are wearing. This allows the system to share valuable insights with the users.</p>
+      <div class="screenshot">
+        <img src="detection.png" alt="Screenshot of detection_data endpoint code">
+        <div class="caption">Endpoint for sending detection data in JSON format</div>
+      </div>
+    </div>
+
+    <!-- halaman 5 certif -->
+    <div class="section certificate">
+      <h2>Internship Certificate</h2>
+      <img src="certificate2.png" alt="Internship Certificate">
+      <div class="caption">Proof of completion at PT Supernova Flexible Packaging</div>
+    </div>
+
+    <!-- Back to Portfolio -->
+    <div class="back-link">
+      <a href="index.html">← Back to Portfolio</a>
+    </div>
+  </div>
+</body>
+</html>
