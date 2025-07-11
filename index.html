@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Saya</title>
-    <!-- googlefonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- font awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
+     <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
     <style>
+      
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #0a0a0a;
@@ -29,6 +29,7 @@
             background-color: rgba(10, 10, 10, 0.9);
             padding: 10px 0;
             text-align: center;
+            
         }
     
         nav ul {
@@ -229,60 +230,47 @@
         .typing-effect span.white-text {
             color: #fff;
         }
-
 #MyProjects {
-    padding-top: 60px; 
-    padding-bottom: 60px; 
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 h2 {
-    font-size: 3rem; 
-    color: transparent; 
+    font-size: 3rem;
+    color: transparent;
     text-align: center;
-    margin-bottom: 50px; 
-    background: linear-gradient(to right, #808080, #00d9ff); 
-    -webkit-background-clip: text; 
-    background-clip: text; 
-    font-weight: bold; 
-}
-
-#MyProjects {
-    padding-top: 60px; 
-    padding-bottom: 60px; 
+    margin-bottom: 50px;
+    background: linear-gradient(to right, #808080, #00d9ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
 }
 
 .MyProjects-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 30px; 
-    justify-content: center;
-    grid-template-rows: auto auto; 
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 30px;
     padding: 0 20px;
 }
 
 .project-card {
     position: relative;
     overflow: hidden;
-    border-radius: 10px; 
+    border-radius: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 0 20px rgba(0, 217, 255, 0.5); 
-    width: 100%; 
-    max-width: 320px; 
-    margin: 0 auto; 
-    background-color: #fff; 
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
 }
 
 .project-card img {
     width: 100%;
-    height: 180px; 
+    height: 180px;
     object-fit: cover;
     object-position: center;
     transition: all 0.3s ease;
-}
-
-.project-card:nth-child(1) img,
-.project-card:nth-child(3) img {
-    height: 180px; 
 }
 
 .card-body {
@@ -291,26 +279,27 @@ h2 {
     left: 0;
     right: 0;
     background: linear-gradient(to bottom, rgba(0, 217, 255, 0.5), rgba(0, 217, 255, 0.9));
-    padding: 15px; 
-    transform: translateY(100%); 
+    padding: 15px;
+    transform: translateY(100%);
     transition: transform 0.3s ease;
     color: #fff;
     border-top: 2px solid #00d9ff;
-    font-size: 14px; 
+    font-size: 13px;
+    
 }
 
 .project-card:hover .card-body {
-    transform: translateY(0); 
+    transform: translateY(0);
 }
 
 .project-card:hover img {
-    opacity: 0.3; 
+    opacity: 0.3;
 }
 
 .project-card a {
-    margin-top: 10px; 
+    margin-top: 10px;
     display: inline-block;
-    padding: 8px 20px; 
+    padding: 8px 20px;
     background-color: #00d9ff;
     color: #0a0a0a;
     border-radius: 25px;
@@ -328,21 +317,23 @@ h2 {
     background-color: #808080;
 }
 
+@media (max-width: 992px) {
+    .MyProjects-section {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
 @media (max-width: 768px) {
     .MyProjects-section {
         grid-template-columns: 1fr; 
-        gap: 15px; 
-    }
-
-    
-    .project-card {
-        max-width: 100%; 
+        gap: 15px;
     }
 
     .project-card img {
-        height: 160px; 
+        height: 160px;
     }
 }
+
 
 .internship-experience {
     display: grid;
@@ -1048,7 +1039,7 @@ function downloadCV() {
 <!-- Proyek 3 -->
 <div class="project-card">
   <div class="card p-3">
-      <img src="thumbail3.png" class="card-img-top" alt="Data Analysis">
+      <img src="thumbail7.png" class="card-img-top" alt="Data Analysis">
       <div class="card-body">
           <h5 class="card-title">AES-256 Encryption & Decryption</h5>
           <p class="card-text">AES-256 Encryption & Decryption app with HMAC for key management and activity logging.</p>
@@ -1108,12 +1099,78 @@ function downloadCV() {
 </div>
 
           
+<!-- Proyek 5 -->
+<div class="project-card">
+  <div class="card p-3">
+    <img src="thumbail5.png" class="card-img-top" alt="Smart Health Project">
+    <div class="card-body">
+      <h5 class="card-title">Smart Health Web Platform</h5>
+      <p class="card-text">
+        A capstone project: Web-based health platform with Google OAuth login, AI chatbot for symptom input, appointment scheduling, and user dashboard.
+      </p>
+      <a href="https://github.com/alvitaaz/SmartHealthPlatform" target="_blank" class="btn btn-primary">GitHub</a>
+      <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#videoModal5">Demo</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal untuk Video Smart Health -->
+<div class="modal fade" id="videoModal5" tabindex="-1" aria-labelledby="videoModalLabel5" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel5">Demo - Smart Health Web Platform</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+<iframe src="https://www.youtube.com/embed/oWczSh8Joko" title="Smart Health Demo" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div> 
+
+<!-- Proyek 6 -->
+<div class="project-card">
+  <div class="card p-3">
+    <img src="thumbail.png" class="card-img-top" alt="Employee Management System">
+    <div class="card-body">
+      <h5 class="card-title">Employee Management System</h5>
+      <p class="card-text">
+        ASP.NET Core web app with SQL Server for managing employee records, including CRUD, search, and activity logs for administrative use.
+      </p>
+      <a href="https://github.com/alvitaaz/EmployeesManagement" target="_blank" class="btn btn-primary">GitHub</a>
+      <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#videoModal6">Demo</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal untuk Video -->
+<div class="modal fade" id="videoModal6" tabindex="-1" aria-labelledby="videoModalLabel6" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel6">Demo - Employee Management System</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/SfrDztZjZ-s" title="Employee Management Demo" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       </div>
   </div>
 </section>
 
-    <!-- JavaScript for Typing Effect -->
     <script>
         const words = ["Programmer", "Web Developer", "Tech Enthusiast"];
         let i = 0;
@@ -1312,15 +1369,14 @@ function downloadCV() {
   function sendEmail() {
     window.location.href = "mailto:alvitaazalia3@gmail.com?subject=Internship Inquiry&body=Hello, I am interested in hiring you.";
   }
+
+  
 </script>
 
-    <!-- Footer -->
     <footer>
       <p>&copy; 2025 Alvita Azalia | built by me.</p>
-
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
