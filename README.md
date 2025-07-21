@@ -13,6 +13,7 @@ This is my personal portfolio website that showcases my background, skills, and 
 ## Technologies Used
 
 - HTML5
-- CSS
+- CSS3
 - Bootstrap
 - Font Awesome
+

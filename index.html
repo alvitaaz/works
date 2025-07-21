@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Custom CSS -->
+    <style>
+   body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            overflow-x: hidden; /* untuk ngehindari scroll horizontal */
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #333;
+            padding: 80px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #e2e6ea;
+            color: #1e3c72;
+        }
+
+        section {
+            padding: 255px 0;
+        }
+
+        #about h2,
+        #skills h2,
+        #MyProjects h2,
+        #contact h2 {
+            font-size: 2.2rem;
+            margin-bottom: 80px;
+            font-weight: 00;
+            color: #1e3c72;
+        }
+
+        .profile-pic {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #e2e6ea;
+        }
+
+        .skills-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #ffffff;
+            border: 1px solid #e2e6ea;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-title {
+            font-size: 1.5rem;
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+
+        .project-card {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .MyProjects-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-card {
+            flex: 1 1 calc(33% - 20px);
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .project-card {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .project-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+            <li><a href="#skills"><i class="fas fa-tools"></i>Skills</a></li>
+            <li><a href="#MyProjects"><i class="fas fa-briefcase"></i>Projects</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+
+ <!-- header pita-->
+<header>
+    <div class="container text-center">
+        <h1>ALVITA AZALIA</h1>
+        <p>Cybersecurity Student at President University</p>
+        <p>Programmer | Web Developer | Tech Enthusiast</p>
+    </div>
+</header>
+
+
+
+    <!-- about me -->
+    <section id="about">
+        <div class="container text-center">
+            <!-- Foto Profil -->
+            <img src="profil.jpg" alt="Foto Profil" class="profile-pic">
+            <h2>About Me</h2>
+            <p>I am an Information Technology student at President University, specializing in cybersecurity. I have a deep interest in programming and web development, and I am always eager to learn and contribute. Let's explore my projects!</p>
+        </div>
+    </section>
+
+   <!-- keahlian aku -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="c.png" alt="Icon" width="24" height="24" />
+                <div class="skill-title">C#</div>
+            </div>
+            <div class="skill-card">
+                <img src="html.png" alt="Icon" width="24" height="24" />
+                <img src="css.png" alt="Icon" width="24" height="24" />
+                <div class="skill-title">HTML/CSS</div>
+            </div>
+            <div class="skill-card">
+                <img src="php.png" alt="Icon" width="24" height="24" />
+                <div class="skill-title">PHP</div>
+            </div>
+            <div class="skill-card">
+                <img src="js.png" alt="Icon" width="24" height="24" />
+                <div class="skill-title">JavaScript</div>
+            </div>
+            <div class="skill-card">
+                <img src="python.png" alt="Icon" width="24" height="24" />
+                <div class="skill-title">Python</div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i> <!-- Ikon untuk Databases -->
+                <div class="skill-title">MySQL</div>
+            </div>
+            <div class="skill-card">
+                <img src="sqlserver.png" alt="Icon" width="24" height="24" />
+                <div class="skill-title">SQL Server</div>
+            </div>
+            <div class="skill-card">
+                <img src="github.png" alt="Icon" width="24" height="24" />
+                <div class="skill-title">Git & GitHub</div>
+            </div>
+            <div class="skill-card">
+                <img src="Bootstrap.png" alt="Icon" width="24" height="24" />
+                <div class="skill-title">Bootstrap</div>
+            </div>
+            <div class="skill-card">
+                <img src="laravel.png" alt="Icon" width="24" height="24" />
+                <div class="skill-title">Laravel</div>
+            </div>
+            <div class="skill-card">
+                <img src="asp.net.ico" alt="Icon" width="24" height="24" />
+                <div class="skill-title">ASP.NET</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Proyek saya -->
+<section id="MyProjects" style="padding-top: 45px;">
+    <div class="container text-center">
+        <h2>My Projects</h2>
+        <div class="MyProjects-section">
+            <!-- Proyek 1 -->
+<!-- Proyek 1 -->
+<div class="project-card">
+    <div class="card p-3">
+        <img src="thumbail.png" class="card-img-top" alt="Proyek 1">
+        <div class="card-body">
+            <h5 class="card-title">Employees Management</h5>
+            <p class="card-text">Employee Management App is a web app built with ASP.NET Core for managing employee data with CRUD operations, search, and logging features.</p>
+            <a href="https://github.com/alvitaaz/EmployeesManagement" target="_blank" class="btn btn-primary">GitHub</a>
+            <a href="https://www.alvitaazalia.somee.com/" class="btn btn-secondary" target="_blank">Demo</a>
+        </div>
+    </div>
+</div>
+
+<!-- Proyek 2 -->
+<div class="project-card">
+    <div class="card p-3">
+        <img src="react.png" class="card-img-top" alt="Proyek 2">
+        <div class="card-body">
+            <h5 class="card-title">React Weather App</h5>
+            <p class="card-text">Weather is a web app built with React that displays real-time weather data (temperature, humidity, wind speed) for cities using the OpenWeatherMap API.</p>
+            <a href="https://github.com/alvitaaz/ReactWeatherApp" target="_blank" class="btn btn-primary">GitHub</a>
+            <a href="https://react-weather-app-tau-lilac.vercel.app/" class="btn btn-secondary" target="_blank">Demo</a>
+        </div>
+    </div>
+</div>
+
+
+            <!-- Proyek 3 -->
+            <div class="project-card">
+                <div class="card p-3">
+                    <img src="thumbail2.png" class="card-img-top" alt="Proyek 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Task Tracker</h5>
+                        <p class="card-text">Task Tracker is a Laravel app for managing tasks with CRUD operations, search functionality, and MySQL storage.</p>
+                        <a href="https://github.com/alvitaaz/laravel-task-tracker" target="_blank" class="btn btn-primary">GitHub</a>
+                        <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#videoModal2">Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 4 -->
+            <div class="project-card">
+                <div class="card p-3">
+                    <img src="thumbail3.png" class="card-img-top" alt="Data Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">AES-256 Encryption & Decryption</h5>
+                        <p class="card-text">AES-256 Encryption & Decryption app with HMAC for key management and activity logging.</p>
+                        <a href="https://github.com/alvitaaz/aes-256-encryption-decryption" target="_blank" class="btn btn-primary">GitHub</a>
+                        <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#videoModal3">Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 5 -->
+            <div class="project-card">
+                <div class="card p-3">
+                    <img src="thumbail4.png" class="card-img-top" alt="Proyek 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Kedaiku-BookStore</h5>
+                        <p class="card-text">Online Bookstore is a web app for users to register, browse, and purchase books, with login for users and admin.</p>
+                        <a href="https://github.com/alvitaaz/BookStoreHub" target="_blank" class="btn btn-primary">GitHub</a>
+                        <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#videoModal4">Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- modal Video Proyek 3 -->
+<div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel2">Demo Video - Task Tracker</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/6imC7nOr0lw" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal Video Proyek 4 -->
+<div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel3">Demo Video - AES-256 Encryption & Decryption</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/4kvK7p0IpFA" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal Video Proyek 5 -->
+<div class="modal fade" id="videoModal4" tabindex="-1" aria-labelledby="videoModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel4">Demo Video - Kedaiku-BookStore</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/calujYcxWkM" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS dan jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- kontak akuu -->
+<section id="contact">
+    <div class="container text-center">
+        <h2>Contact Me</h2>
+        <p>To establish further communication, please contact me via:</p>
+        
+        <div class="mb-2">
+            <a href="mailto:alvitaazalia3@gmail.com" class="btn btn-success">
+                <i class="fas fa-envelope"></i> Email: alvitaazalia3@gmail.com
+            </a>
+        </div>
+        
+        <div class="mb-2">
+            <a href="tel:+625283123998" class="btn btn-primary">
+                <i class="fas fa-phone"></i> Phone: +62 52 8312 3998
+            </a>
+        </div>
+        
+        <div>
+            <a href="https://github.com/alvitaaz" target="_blank" class="btn btn-dark">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <p class="mt-2">Feel free to check out my projects on GitHub!</p>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Alvita Azalia. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
